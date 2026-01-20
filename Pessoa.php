@@ -1,58 +1,60 @@
 <?php
 require_once "Acao.php";
-class Pessoa{
-    protected static $nome;
-    protected static $idade;
-    protected static $cabelo;
-    protected static $olhos;
-    protected static $pele;
+class Pessoa
+{
+    static protected $nome;
+    static protected $idade;
+    static protected $corOlhos;
+    static protected $tomPele;
+    static protected $tipoCabelo;
 
-    public function __construct($nome, $idade, $cabelo, $olhos, $pele){
-        $this->setNome($nome);
-        $this->setIdade($idade);
-        $this->setCabelo($cabelo);
-        $this->setOlhos($olhos);
-        $this->setPele($pele);
+    public function __construct($nome, $idade, $corOlhos, $tomPele, $tipoCabelo){
+        self::setNome($nome);
+        self::setIdade($idade);
+        self::setCorOlhos($corOlhos);
+        self::setTomPele($tomPele);
+        self::setTipoCabelo($tipoCabelo);
     }
-    
-    public function getNome(){
+
+
+    static public function getNome(){
         return self::$nome;
     }
 
-    public function setNome($n){
+    static public function setNome($n){
         self::$nome = $n;
     }
 
-    public function getIdade(){
+    static public function getIdade(){
         return self::$idade;
     }
 
-    public function setIdade($i){
+    static public function setIdade($i){
         self::$idade = $i;
     }
 
-    public function getCabelo(){
-        return self::$cabelo;
+    static public function getCorOlhos(){
+        return self::$corOlhos;
     }
 
-    public function setCabelo($c){
-        self::$cabelo = $c;
+    static public function setCorOlhos($co){
+        self::$corOlhos = $co;
     }
 
-    public function getOlhos(){
-        return self::$olhos;
+    static public function getTomPele(){
+        return self::$tomPele;
     }
 
-    public function setOlhos($o){
-        self::$olhos = $o;
+    static public function setTomPele($tp){
+        self::$tomPele = $tp;
     }
 
-    public function getPele(){
-        return self::$pele;
+    static public function getTipoCabelo(){
+        return self::$tipoCabelo;
     }
 
-    public function setPele($p){
-        self::$pele = $p;
+    static public function setTipoCabelo($tc){
+        self::$tipoCabelo = $tc;
     }
 }
 ?>
