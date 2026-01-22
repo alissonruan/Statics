@@ -16,7 +16,6 @@ class Pessoa
         self::setTipoCabelo($tipoCabelo);
     }
 
-
     static public function getNome(){
         return self::$nome;
     }
