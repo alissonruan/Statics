@@ -23,7 +23,7 @@ class Acao extends Pessoa
     }
 }
 
-$acao = new Acao("Alisson", 20, "Castanhos", "Parda", "Cacheado");
+Acao::IniciarConstrutor("Alisson", 20, "Castanhos", "Parda", "Cacheado");
 
 Acao::Falar();
 Acao::Comer();

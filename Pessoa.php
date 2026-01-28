@@ -8,7 +8,7 @@ class Pessoa
     static protected $tomPele;
     static protected $tipoCabelo;
 
-    public function __construct($nome, $idade, $corOlhos, $tomPele, $tipoCabelo){
+    static public function IniciarConstrutor($nome, $idade, $corOlhos, $tomPele, $tipoCabelo){
         self::setNome($nome);
         self::setIdade($idade);
         self::setCorOlhos($corOlhos);
